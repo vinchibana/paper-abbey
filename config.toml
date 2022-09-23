@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Paper Abbey'
 theme = 'paper'
 
-disqusShortname = 'vinchibana'   # add disqus comments
+disqusShortname = 'paper-abbey'   # add disqus comments
 
 [params]
   # color style
