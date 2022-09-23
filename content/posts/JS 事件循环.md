@@ -1,37 +1,34 @@
----
-title: "从一道题浅说 JavaScript 的事件循环"
-date: 2022-09-23T21:44:56+08:00
-draft: false
----
-
+# 从一道题浅说 JavaScript 的事件循环
 
 最近看到这样一道有关事件循环的前端面试题：
 
 ```js
 //请写出输出内容
 async function async1() {
-    console.log('async1 start');
-    await async2();
-    console.log('async1 end');
+  console.log('async1 start');
+  await async2();
+  console.log('async1 end');
 }
+
 async function async2() {
-console.log('async2');
+  console.log('async2');
 }
 
 console.log('script start');
 
 setTimeout(function() {
-    console.log('setTimeout');
+  console.log('setTimeout');
 }, 0)
 
 async1();
 
 new Promise(function(resolve) {
-    console.log('promise1');
-    resolve();
+  console.log('promise1');
+  resolve();
 }).then(function() {
-    console.log('promise2');
+  console.log('promise2');
 });
+
 console.log('script end');
 /*
 script start
@@ -110,9 +107,9 @@ microtask主要包含：Promise.then、MutaionObserver、process.nextTick(Node.j
 
 ```js
 async function async1() {
-console.log('async1 start');
-await async2();
-console.log('async1 end');
+  console.log('async1 start');
+  await async2();
+  console.log('async1 end');
 }
 ```
 
@@ -120,10 +117,10 @@ console.log('async1 end');
 
 ```js
 async function async1() {
-console.log('async1 start');
-Promise.resolve(async2()).then(() => {
-                console.log('async1 end');
-        })
+  console.log('async1 start');
+  Promise.resolve(async2()).then(() => {
+    console.log('async1 end');
+  })
 }
 ```
 
