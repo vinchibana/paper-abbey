@@ -1,0 +1,25 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Paper Abbey'
+theme = 'paper'
+
+disqusShortname = 'vinchibana'   # add disqus comments
+
+[params]
+  # color style
+  color = 'linen'                 # linen, wheat, gray, light
+
+  # header social icons
+  twitter = 'vinchibana'     # twitter.com/YOUR_TWITTER_ID
+  github = 'vinchibana'       # github.com/YOUR_GITHUB_ID
+  instagram = 'vialin1128' # instagram.com/YOUR_INSTAGRAM_ID
+  rss = true                      # show rss icon with link
+
+  # home page profile
+  avatar = 'GRAVATAR_EMAIL'       # Gravatar email or image url(e.g. "https://deno.land/logo.svg")
+  name = '鹊桥仙仙'
+  bio = 'Fais ce que tu voudras'
+
+  # misc
+  disableHLJS = true              # disable requesting highlight.js
+  monoDarkIcon = true             # show monochrome dark mode icon
