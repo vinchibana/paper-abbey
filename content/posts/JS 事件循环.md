@@ -49,6 +49,8 @@ setTimeout
 
 这道题主要考察的是事件循环中函数执行顺序的问题，其中包括`async` ，`await`，`setTimeout`，`Promise`函数。下面来说一下本题中涉及到的知识点。
 
+[try it !](https://codesandbox.io/embed/react-useeffect-redux-9t3bg?fontsize=14&hidenavigation=1&theme=dark)
+
 ## 任务队列
 
 首先我们需要明白以下几件事情：
