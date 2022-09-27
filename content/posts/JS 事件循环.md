@@ -49,7 +49,14 @@ setTimeout
 
 这道题主要考察的是事件循环中函数执行顺序的问题，其中包括`async` ，`await`，`setTimeout`，`Promise`函数。下面来说一下本题中涉及到的知识点。
 
-[try it !](https://codesandbox.io/embed/react-useeffect-redux-9t3bg?fontsize=14&hidenavigation=1&theme=dark)
+
+
+<iframe src="https://codesandbox.io/embed/react-usecontext-redux-0bj1v?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="react-useContext-redux"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   > </iframe>
 
 ## 任务队列
 
